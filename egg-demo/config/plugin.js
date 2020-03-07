@@ -6,9 +6,20 @@ module.exports = {
   // static: {
   //   enable: true,
   // }
+
+  mysql: {
+    enable: true,
+    package: 'egg-mysql',
+  },
+  cors: {
+    enable: true,
+    package: 'egg-cors',
+  }
 };
 
-exports.cors = {
-  enable: true,
-  package: 'egg-cors',
-};
+// exports.
+
+// exports.cors = {
+//   enable: true,
+//   package: 'egg-cors',
+// };

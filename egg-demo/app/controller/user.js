@@ -6,11 +6,8 @@ const Controller = require('egg').Controller;
 class UserController extends Controller {
     async index() {
         const { ctx } = this;
-        const {title,content} = await ctx.service.user.user()
-        ctx.body = {
-            title,
-            content
-        }
+        // const {title,content} = await ctx.service.user.user()
+        ctx.body = ctx.request.body
         // const { username } = ctx.query
         // ctx.body = username
 

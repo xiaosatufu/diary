@@ -1,6 +1,10 @@
 import React from "react"
 
 import Home from './Home'
+import Detail from './Detail'
+import Edit from './Edit'
+
+
 
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 
@@ -10,6 +14,12 @@ const RouterMap = () => {
     <Switch>
       <Route exact path="/">
         <Home></Home>
+      </Route>
+      <Route exact path="/detail">
+        <Detail></Detail>
+      </Route>
+      <Route exact path="/edit">
+        <Edit></Edit>
       </Route>
     </Switch>
   </Router>
